@@ -3,7 +3,7 @@ This is my own hack!!
 
 Loadstring:
 ```lua
-loadstring(game:HttpGet('https://raw.githubusercontent.com/codeguybutbackrooms/trackrooms-hub/main/versions/0.1.3-shortened.lua'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/codeguybutbackrooms/trackrooms-hub/main/versions/0.1.5-shortened.lua'))()
 ```
 
 # Features
@@ -19,3 +19,6 @@ This will make you can jump everywhere even on the air. Hold it if you want go t
 ### Dash
 You will dash. There are some errors occurring at the moment.
 Fixed the black screen error at 0.1.3 version
+
+### FOV
+Added in 0.1.5, this will set your FOV to any numbers
