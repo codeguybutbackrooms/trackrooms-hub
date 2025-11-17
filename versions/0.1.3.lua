@@ -124,7 +124,7 @@ local jumpHeightInput = CreateTextInput(mainUIFrame, "JumpHeight", UDim2.new(0, 
 local setWalkSpeedButton = CreateButton(mainUIFrame, "SetWalkSpeed", "Set WalkSpeed", UDim2.new(0, 190, 0, 60))
 local setJumpHeightButton = CreateButton(mainUIFrame, "SetJumpHeight", "Set JumpHeight", UDim2.new(0, 190, 0, 110))
 local infiniteJumpButton = CreateButton(mainUIFrame, "InfiniteJump", "Infinite Jump", UDim2.new(0, 20, 0, 170))
-local dashButton = CreateButton(mainUIFrame, "Dash", "Dash (Beta)", UDim2.new(0, 190, 0, 170))
+local dashButton = CreateButton(mainUIFrame, "Dash", "Dash", UDim2.new(0, 190, 0, 170))
 
 -- WalkSpeed
 setWalkSpeedButton.MouseButton1Click:Connect(function()
