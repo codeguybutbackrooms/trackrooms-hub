@@ -1,3 +1,5 @@
+-- This beta version i forgot to delete the gravity input so try 0.1.7 version instead
+
 --// Services
 local Players = game:GetService("Players")
 local TweenService = game:GetService("TweenService")
