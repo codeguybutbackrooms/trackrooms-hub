@@ -3,7 +3,7 @@ This is my own hack!!
 
 Loadstring:
 ```lua
-loadstring(game:HttpGet('https://raw.githubusercontent.com/codeguybutbackrooms/trackrooms-hub/main/versions/0.1.7-shortened.lua'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/codeguybutbackrooms/trackrooms-hub/main/versions/0.1.8-shortened.lua'))()
 ```
 
 # Features
@@ -25,3 +25,6 @@ Added in 0.1.5, this will set your FOV to any numbers
 
 ### Anti-AFK
 Added kn 0.1.7, this will avoid kicking if afk more than 20 minutes by right-click
+
+### No-clip
+Added in 0.1.8, this will make you can walk through walls
