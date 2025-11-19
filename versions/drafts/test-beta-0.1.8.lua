@@ -1,3 +1,5 @@
+-- This beta version is officially added in 0.1.8
+
 --// Services
 local Players = game:GetService("Players")
 local TweenService = game:GetService("TweenService")
