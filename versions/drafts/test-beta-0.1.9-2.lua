@@ -1,3 +1,5 @@
+-- I can't believe i spent 15 minutes for one single bug
+
 --// Services
 local Players = game:GetService("Players")
 local TweenService = game:GetService("TweenService")
@@ -370,7 +372,6 @@ local fovInput = CreateTextInput(contentFrame, "Enter FOV", UDim2.new(0, 20, 0, 
 local setFOVButton = CreateButton(contentFrame, "SetFOV", "Set FOV", UDim2.new(0, 190, 0, 220))
 local antiAFKButton = CreateButton(contentFrame, "AntiAFK", "Anti-AFK", UDim2.new(0,0,0,0))
 local noclipButton = CreateButton(contentFrame, "Btn_Noclip", "Noclip", UDim2.new(0,0,0,0))
-local playerListContent = CreateCollapsible(contentFrame, "Players", true)
 ---------------------------------------------------------------------
 -- WALK SPEED
 ---------------------------------------------------------------------
