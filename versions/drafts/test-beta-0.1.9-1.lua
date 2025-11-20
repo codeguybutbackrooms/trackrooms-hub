@@ -570,4 +570,72 @@ end
 function AddPlayerRow(parent, player)
     local row = Instance.new("Frame")
     row.Size = UDim2.new(1, -10, 0, 50)
-    row.BackgroundCol
+    row.BackgroundColor3 = Color3.fromRGB(30, 30, 35)
+    row.Parent = parent
+
+    Instance.new("UICorner", row).CornerRadius = UDim.new(0, 8)
+
+    local avatar = Instance.new("ImageLabel")
+    avatar.Size = UDim2.new(0, 40, 0, 40)
+    avatar.Position = UDim2.new(0, 5, 0, 5)
+    avatar.BackgroundTransparency = 1
+    avatar.Parent = row
+
+    -- Load Avatar
+    task.spawn(function()
+        local ok, img = pcall(function()
+            return game.Players:GetUserThumbnailAsync(
+                player.UserId,
+                Enum.ThumbnailType.HeadShot,
+                Enum.ThumbnailSize.Size100x100
+            )
+        end)
+        if ok then avatar.Image = img end
+    end)
+
+    local nameLabel = Instance.new("TextLabel")
+    nameLabel.Position = UDim2.new(0, 50, 0, 4)
+    nameLabel.Size = UDim2.new(1, -150, 0, 22)
+    nameLabel.BackgroundTransparency = 1
+    nameLabel.TextColor3 = Color3.new(1,1,1)
+    nameLabel.Font = Enum.Font.GothamBold
+    nameLabel.TextScaled = true
+    nameLabel.TextXAlignment = Enum.TextXAlignment.Left
+    nameLabel.Text = player.DisplayName
+    nameLabel.Parent = row
+
+    local userLabel = Instance.new("TextLabel")
+    userLabel.Position = UDim2.new(0, 50, 0, 26)
+    userLabel.Size = UDim2.new(1, -150, 0, 20)
+    userLabel.BackgroundTransparency = 1
+    userLabel.TextColor3 = Color3.fromRGB(180,180,180)
+    userLabel.Font = Enum.Font.Gotham
+    userLabel.TextScaled = true
+    userLabel.TextXAlignment = Enum.TextXAlignment.Left
+    userLabel.Text = "@" .. player.Name
+    userLabel.Parent = row
+
+    -- Teleport Button
+    local tpButton = Instance.new("TextButton")
+    tpButton.Size = UDim2.new(0, 90, 0, 36)
+    tpButton.Position = UDim2.new(1, -100, 0, 7)
+    tpButton.BackgroundColor3 = Color3.fromRGB(45,45,55)
+    tpButton.TextColor3 = Color3.new(1,1,1)
+    tpButton.Font = Enum.Font.GothamBold
+    tpButton.TextScaled = true
+    tpButton.Text = "Teleport"
+    tpButton.Parent = row
+
+    Instance.new("UICorner", tpButton).CornerRadius = UDim.new(0, 8)
+
+    tpButton.MouseButton1Click:Connect(function()
+        local_LocalCharacter = game.Players.LocalPlayer.Character
+        local targetChar = player.Character
+
+        if local_LocalCharacter and targetChar and targetChar:FindFirstChild("HumanoidRootPart") then
+            local_LocalCharacter:MoveTo(targetChar.HumanoidRootPart.Position + Vector3.new(0, 3, 0))
+        end
+    end)
+
+    return row
+end
