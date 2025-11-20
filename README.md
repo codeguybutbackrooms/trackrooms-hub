@@ -5,7 +5,10 @@ Loadstring:
 ```lua
 loadstring(game:HttpGet('https://raw.githubusercontent.com/codeguybutbackrooms/trackrooms-hub/main/versions/0.1.8-shortened.lua'))()
 ```
-
+If you want experience the best draft version
+```lua
+loadstring(game:HttpGet('https://raw.githubusercontent.com/codeguybutbackrooms/trackrooms-hub/main/versions/drafts/test-beta-0.1.9-2.lua'))()
+```
 # Features
 ### WalkSpeed
 This will change the walkspeed to fast/slow by enter the number to the input
