@@ -17,11 +17,11 @@ modernScreenGui.Name = "ModernUI"
 modernScreenGui.ResetOnSpawn = false
 modernScreenGui.Enabled = false -- disable first to avoid layout bugs
 
--- Parent after a short delay
-task.defer(function()
-    modernScreenGui.Parent = playerGui
-    modernScreenGui.Enabled = true -- enable after parenting
-end)
+local player = game.Players.LocalPlayer
+local playerGui = player:WaitForChild("PlayerGui")
+task.wait(0.1)
+modernScreenGui.Parent = playerGui
+modernScreenGui.Enabled = true
 
 
 --// Floating minimized icon
@@ -69,6 +69,7 @@ mainUIFrame.Active = true
 mainUIFrame.Draggable = true
 mainUIFrame.ClipsDescendants = true
 mainUIFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+mainUIFrame.Visible = true
 ---------------------------------------------------------------------
 -- SCROLLABLE CONTENT AREA
 ---------------------------------------------------------------------
