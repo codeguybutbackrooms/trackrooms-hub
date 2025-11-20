@@ -15,7 +15,14 @@ end
 local modernScreenGui = Instance.new("ScreenGui")
 modernScreenGui.Name = "ModernUI"
 modernScreenGui.ResetOnSpawn = false
-modernScreenGui.Parent = playerGui
+modernScreenGui.Enabled = false -- disable first to avoid layout bugs
+
+-- Parent after a short delay
+task.defer(function()
+    modernScreenGui.Parent = playerGui
+    modernScreenGui.Enabled = true -- enable after parenting
+end)
+
 
 --// Floating minimized icon
 local floatingMinimizedIcon = Instance.new("TextButton")
