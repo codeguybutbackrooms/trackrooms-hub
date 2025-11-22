@@ -356,7 +356,7 @@ local fovInput = CreateTextInput(contentFrame, "Enter FOV", UDim2.new(0, 20, 0, 
 local setFOVButton = CreateButton(contentFrame, "SetFOV", "Set FOV", UDim2.new(0, 190, 0, 220))
 local antiAFKButton = CreateButton(contentFrame, "AntiAFK", "Anti-AFK", UDim2.new(0,0,0,0))
 local noclipButton = CreateButton(contentFrame, "Btn_Noclip", "Noclip", UDim2.new(0,0,0,0))
-
+local playersSection = CreateCollapsible(contentFrame, "Players", "Players", UDim2.new(0,20,0,350))
 ---------------------------------------------------------------------
 -- WALK SPEED
 ---------------------------------------------------------------------
