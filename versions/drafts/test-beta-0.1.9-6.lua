@@ -1,5 +1,3 @@
--- I can't believe i spent 15 minutes for one single bug
-
 --// Services
 local Players = game:GetService("Players")
 local TweenService = game:GetService("TweenService")
