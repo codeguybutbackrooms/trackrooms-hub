@@ -3,12 +3,11 @@ This is my own hack!!
 
 Loadstring:
 ```lua
-loadstring(game:HttpGet('https://raw.githubusercontent.com/codeguybutbackrooms/trackrooms-hub/main/versions/0.1.8-shortened.lua'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/codeguybutbackrooms/trackrooms-hub/main/versions/0.1.9-shortened.lua'))()
 ```
 If you want experience the best draft version (or some of beta features in the future) <br>
-(help this is the fifth draft of 0.1.9 version and it still bug)
 ```lua
-loadstring(game:HttpGet('https://raw.githubusercontent.com/codeguybutbackrooms/trackrooms-hub/main/versions/drafts/test-beta-0.1.9-5.lua'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/codeguybutbackrooms/trackrooms-hub/main/versions/drafts/test-beta-0.1.9-8.lua'))()
 ```
 # Features
 ### WalkSpeed
@@ -32,3 +31,6 @@ Added kn 0.1.7, this will avoid kicking if afk more than 20 minutes by right-cli
 
 ### No-clip
 Added in 0.1.8, this will make you can walk through walls
+
+### Instant interact
+Added in 0.1.9, this will make you make any action instantly
