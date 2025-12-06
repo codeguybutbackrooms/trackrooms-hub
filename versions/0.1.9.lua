@@ -442,7 +442,7 @@ game.Players.LocalPlayer.CharacterAdded:Connect(function()
     end
 end)
 ---------------------------------------------------------------------
--- INSTANT INTERACT (minimal, same behavior as your reference)
+-- INSTANT INTERACT
 ---------------------------------------------------------------------
 local ProximityPromptService = game:GetService("ProximityPromptService")
 local instantInteractEnabled = false
