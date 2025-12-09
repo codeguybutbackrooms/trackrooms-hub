@@ -5,7 +5,7 @@ Loadstring:
 ```lua
 loadstring(game:HttpGet('https://raw.githubusercontent.com/codeguybutbackrooms/trackrooms-hub/main/versions/0.2.1-shortened.lua'))()
 ```
-If you want experience the best draft version (or some of beta features in the future) <br>
+Newest beta version <br>
 ```lua
 loadstring(game:HttpGet('https://raw.githubusercontent.com/codeguybutbackrooms/trackrooms-hub/main/versions/drafts/test-beta-0.2.1.lua'))()
 ```
