@@ -7,7 +7,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/codeguybutbackrooms/t
 ```
 Newest beta version <br>
 ```lua
-loadstring(game:HttpGet('https://raw.githubusercontent.com/codeguybutbackrooms/trackrooms-hub/main/versions/drafts/test-beta-0.2.1.lua'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/codeguybutbackrooms/trackrooms-hub/main/versions/drafts/test-beta-0.2.2-3.lua'))()
 ```
 # Features
 ### WalkSpeed
@@ -40,3 +40,6 @@ Added in v2.1 (0.2.1), it will auto interact with any proximity prompt that show
 
 ### Show position & teleport
 Added in v2 (0.2.0), it shows the x, y, and z positions and updates them live. You can also teleport to any x, y, z coordinate
+
+### Show & Play Sounds
+Show and play sounds in the game
